@@ -23,8 +23,8 @@
 		<c:forEach items="${produto}" var="produto">
 			<tr>
 				<td>${produto.nome}</td>
-				<td>${produto.quantidade}</td>
-				<td>${produto.preco}</td>
+				<td align="right">${produto.quantidade}</td>
+				<td align="right">R$ ${produto.preco}</td>
 				<td><a href="editar?id=<c:out value="${produto.id}"/>">Editar</a></td>
 				<td><a href="deletar?id=<c:out value="${produto.id}"/>">Excluir</a></td>
 			</tr>
